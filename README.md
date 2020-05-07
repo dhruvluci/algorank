@@ -1,6 +1,6 @@
 # Fermion Social Rep Protocol
 
-A Fermi is a decentralised, social credit scoring unit. It seeks to be an alternative to centralised credit scores that exzclude a majority of the population from access to fair credit. In times like the covid-19 crisis, it seeks to leverage the blockchain to enable 70% of the world to have access to credit. 
+A Fermi is a decentralised, social credit scoring unit. It seeks to be an alternative to centralised credit scores that exclude a majority of the population from access to fair credit. In times like the covid-19 crisis, it seeks to leverage the blockchain to enable 70% of the world to have access to credit. 
 
 Fermion protocol relies on two fundamental units:
 1. The Fermi token - used to express "Trust" for another user, by linking your own reputation score to theirs. Approved Users recieve 100 Fermi a day, which are burnt if not spent in 24hrs.
