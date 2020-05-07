@@ -15,6 +15,11 @@ Fundamentally, a Fermi is different from money. Sending Fermi has a unique impac
 
 Fermi score can be built by recieving more Fermi from other people with high ratings. 
 
+More Information:
+Litepaper v0.1: https://docs.google.com/document/d/1vIGNiRq8fBWyxVR4RIQ_nF7yGPUfWv-LweAntGIPjJo/edit
+Spreadsheet for level 0-9: https://docs.google.com/spreadsheets/d/1K33wjqU6vdNHpHhL3ARVm83Cmc9knHYswRwwxKM8_9U/edit#gid=0
+
+
 This project is intended to be used with Buidler.
 
 ## Quick start
