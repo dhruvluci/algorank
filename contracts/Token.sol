@@ -9,8 +9,8 @@ import "@nomiclabs/buidler/console.sol";
 // This is the main building block for smart contracts.
 contract Token {
     // Some string type variables to identify the token.
-    string public name = "My Buidler Token";
-    string public symbol = "MBT";
+    string public name = "Fermi Trust Points";
+    string public symbol = "FER";
 
     // The fixed amount of tokens stored in an unsigned integer type variable.
     uint256 public totalSupply = 1000000;
@@ -55,7 +55,8 @@ contract Token {
         );
 
         // Transfer the amount.
-        balances[msg.sender] -= amount;
+        uint256 a2 = amount;
+        balances[msg.sender] -= a2;
         balances[to] += amount;
     }
 

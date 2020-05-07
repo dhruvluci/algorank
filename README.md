@@ -1,13 +1,21 @@
-# Buidler Hackathon Boilerplate
+# Fermion Social Rep Protocol
 
-This repository contains a sample project that you can use as the starting point
-for your Ethereum project. It's also a great fit for learning the basics of
-smart contract development.
+A Fermi is a decentralised, social credit scoring unit. It seeks to be an alternative to centralised credit scores that exzclude a majority of the population from access to fair credit. In times like the covid-19 crisis, it seeks to leverage the blockchain to enable 70% of the world to have access to credit. 
 
-This project is intended to be used with the
-[Buidler Beginners Tutorial](http://buidler.dev/tutorial), but you should be
-able to follow it by yourself by reading the README and exploring its
-`contracts`, `tests`, `scripts` and `frontend` directories.
+Fermion protocol relies on two fundamental units:
+1. The Fermi token - used to express "Trust" for another user, by linking your own reputation score to theirs. Approved Users recieve 100 Fermi a day, which are burnt if not spent in 24hrs.
+2. The Fermi score - This is a decentralised credit score comprising: 50% of a weighted sum of all your peers, and 50% of your own deposit and replayment history. All Fermi Users begin with a score of 250.
+
+A person needs to recieve at least 10 Fermi from 2 different addresses to become an "Approved user". Once approved, a user straight away enjoys a borrowing limit of $10 and a savings interest rate of ~8%. These limits increase with an increasing Fermi Score.
+
+Fundamentally, a Fermi is different from money. Sending Fermi has a unique impact: it creates a permanent link between your Fermi Score and the reciever's Fermi Score. This way, people will be incentivised to build up networks of trusted contacts globally, in a decentraalised waay. Credit can then effectively be provided to millions of such people at low risk.
+
+-Send Fermi to trusted connections, and boost your Fermi Score
+-Enjoy increased borrowing limits, lower borrowing interest (<15%), and higher savings interest (>9%) as your Fermi Score increases.
+
+Fermi score can be built by recieving more Fermi from other people with high ratings. 
+
+This project is intended to be used with Buidler.
 
 ## Quick start
 
@@ -15,8 +23,7 @@ The first things you need to do are cloning this repository and installing its
 dependencies:
 
 ```sh
-git clone https://github.com/nomiclabs/buidler-hackathon-boilerplate.git
-cd buidler-hackathon-boilerplate
+cd Fermion-0.12
 npm install
 ```
 
@@ -47,39 +54,13 @@ need to have [Metamask](http://metamask.io) installed and listening to
 
 ## User Guide
 
-You can find detailed instructions on using this repository and many tips in [its documentation](http://buidler.dev/tutorial).
-
-- [Project description (Token.sol)](http://buidler.dev/tutorial/4-contracts/)
-- [Setting up the environment](http://buidler.dev/tutorial/1-setup/)
-- [Testing with Buidler, Mocha and Waffle](http://buidler.dev/tutorial/5-test/)
 - [Setting up Metamask](http://buidler.dev/tutorial/8-frontend/#setting-up-metamask)
 - [Buidler's full documentation](https://buidler.dev/getting-started/)
 
 For a complete introduction to Buidler, refer to [this guide](https://buidler.dev/getting-started/#overview).
 
-## What’s Included?
-
-Your environment will have everything you need to build a Dapp powered by Buidler and React.
-
-- [Buidler](https://buidler.dev/): An Ethereum development task runner and testing network.
-- [Mocha](https://mochajs.org/): A JavaScript test runner.
-- [Chai](https://www.chaijs.com/): A JavaScript assertion library.
-- [ethers.js](https://docs.ethers.io/ethers.js/html/): A JavaScript library for interacting with Ethereum.
-- [Waffle](https://github.com/EthWorks/Waffle/): To have Ethereum-specific Chai assertions/mathers.
-- [A sample frontend/Dapp](./frontend): A Dapp which uses [Create React App](https://github.com/facebook/create-react-app).
-
-## Troubleshooting
-
-- `Invalid nonce` errors: if you are seeing this error on the `buidler node`
-  console, try resetting your Metamask account. This will reset the account's
-  transaction history and also the nonce. Open Metamask, click on your account
-  followed by `Settings > Advanced > Reset Account`.
 
 ## Feedback, help and news
 
-We'd love to have your feedback on this tutorial. Feel free to reach us through
-this repository or [our Telegram Support Group](https://t.me/BuidlerSupport).
+We'd love to hear feedback on this proposal. Reach us on Twitter @Krredit, and gitcoin @dhruvluci.
 
-Also you can [follow Nomic Labs on Twitter](https://twitter.com/nomiclabs).
-
-**Happy _buidling_!**
