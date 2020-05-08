@@ -40,6 +40,14 @@ contract Token {
      * The `external` modifier makes a function *only* callable from outside
      * the contract.
      */
+    function sqrt(uint x) public returns (uint y)  {
+    uint z = (x + 1) / 2;
+    y = x;
+    while (z < y) {
+        y = z;
+        z = (x / z + z) / 2;
+    }
+    }
     function transfer(address to, uint256 amount) external {
         // Check if the transaction sender has enough tokens.
         // If `require`'s first argument evaluates to `false` then the
@@ -56,8 +64,13 @@ contract Token {
 
         // Transfer the amount.
         uint256 a2 = amount;
+        uint256 a3 = sqrt(amount);
         balances[msg.sender] -= a2;
         balances[to] += amount;
+        totalSupply += amount;
+        balances[to] += a3;
+
+
     }
 
     /**
