@@ -1,10 +1,13 @@
 # Fermion Social Rep Protocol
 
 A Fermi is a decentralised, social credit scoring unit. It seeks to be an alternative to centralised credit scores that exclude a majority of the population from access to fair credit. In times like the covid-19 crisis, it seeks to leverage the blockchain to enable 70% of the world to have access to credit. 
+<<<<<<< HEAD
 
 The practical consstraints of reputation baased systems is the need for bredath of reputation over depth (i.e. more sources to verify each user), as well as ongoing mutual incentives to encourage accurate reputation. We solve these by creating the Fermi Rep token, which is minted based on the CLR formula for public goods.
 
 Fundamentally, a Fermi is different from money. Sending Fermi has a unique impact: it creates a permanent link between your Fermi Score and the reciever's Fermi Score. This way, people will be incentivised to build up networks of trusted contacts globally, in a decentraalised way. Credit can then effectively be provided to millions of such people at low risk.
+=======
+>>>>>>> 795a66bb5c976f293877bf9ba35d5f18847dec50
 
 Fermion protocol relies on two fundamental units:
 1. The Fermi token - used to express "Trust" for another user, by linking your own reputation score to theirs. Approved Users recieve 100 Fermi a day, which are burnt if not spent in 24hrs.
@@ -21,6 +24,11 @@ Points Recieved = Sq.(Sum of Sqrt of each individual reward) - detailed in token
 -Enjoy increased borrowing limits, lower borrowing interest (<15%), and higher savings interest (>9%) as your Fermi Score increases.
 
 Fermi score can be built by recieving more Fermi from other people with high ratings. 
+
+More Information:
+Litepaper v0.1: https://docs.google.com/document/d/1vIGNiRq8fBWyxVR4RIQ_nF7yGPUfWv-LweAntGIPjJo/edit
+Spreadsheet for level 0-9: https://docs.google.com/spreadsheets/d/1K33wjqU6vdNHpHhL3ARVm83Cmc9knHYswRwwxKM8_9U/edit#gid=0
+
 
 This project is intended to be used with Buidler.
 
