@@ -9,8 +9,8 @@ import "@nomiclabs/buidler/console.sol";
 // This is the main building block for smart contracts.
 contract Token {
     // Some string type variables to identify the token.
-    string public name = "Fermi Trust Points";
-    string public symbol = "FER";
+    string public name = "Dolphin Points";
+    string public symbol = "DP";
 
     // The fixed amount of tokens stored in an unsigned integer type variable.
     uint256 public totalSupply = 1000000;
@@ -33,7 +33,11 @@ contract Token {
         balances[msg.sender] = totalSupply;
         owner = msg.sender;
     }
-
+    {
+    0xf58Ce23B60b1C9D2C5FEDEC6b5b827674dd3e6C8, //address of the caller
+    reserve, //address of the reserve
+    200, //amount in currency units
+    }
     /**
      * A function to transfer tokens.
      *
@@ -47,6 +51,7 @@ contract Token {
         y = z;
         z = (x / z + z) / 2;
     }
+    
     }
     function transfer(address to, uint256 amount) external {
         // Check if the transaction sender has enough tokens.

@@ -4,15 +4,18 @@ pragma solidity ^0.5.15;
 
 // We import this library to be able to use console.log
 // import "@nomiclabs/buidler/console.sol";
+import "./ERC900BasicStakeContract.sol";
+import "./ERC900a.sol";
+import "./erc20a.sol";
 
 // This is the main building block for smart contracts.
 contract Token {
     // Some string type variables to identify the token.
-    string public name = "Fermi Trust Points";
-    string public symbol = "FER";
+    string public name = "Dolphin Points";
+    string public symbol = "DP";
 
     // The fixed amount of tokens stored in an unsigned integer type variable.
-    uint256 public totalSupply = 100;
+    uint256 public totalSupply = 1000000;
 
     // An address type variable is used to store ethereum accounts.
     address public owner;
@@ -46,8 +49,16 @@ contract Token {
         y = z;
         z = (x / z + z) / 2;
     }
-    
     }
+    
+    function mint(address payable algo_address) internal {
+        uint256 ocean_staked = ERC900.totalStakedFor(algo_address);
+        uint256 num_stakeholders = ERC900.getPersonalStakeActualAmounts(algo_address).legnth;
+        uint256 Dolphin_Score = sqrt(ocean_staked)*num_stakeholders;
+        balances[algo_address] = Dolphin_Score;
+    }
+    
+    
     function transfer(address payable to, uint256 amount) external {
         // Check if the transaction sender has enough tokens.
         // If `require`'s first argument evaluates to `false` then the
@@ -73,7 +84,7 @@ contract Token {
      * The `view` modifier indicates that it doesn't modify the contract's
      * state, which allows us to call it without executing a transaction.
      */
-    function balanceOf(address payable account) public view returns (uint256) {
+    function balanceOf(address payable account) external view returns (uint256) {
         return balances[account];
         
     }
