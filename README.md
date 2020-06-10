@@ -14,13 +14,13 @@ The steps for staking in favour of any algorithim is as follows:
 
 1. Users *Stake* $ocean : by calling Call stakeFor(_addr_) in the Erc900BasicStake.sol, where addr is the DID address of the algorithim.
 2. The Stakeholders and Total_Staked_For any algorithim can be directly queried from this contract.
-3. The Dolphin Points (DP)/AlgoRank Score of an algorithim are updated as follows [tokenx.sol] :
+3. The Dolphin Points (DP)/AlgoRank Score of an algorithim are updated as follows [Dolphin_Points.sol] :
 root(Total_Staked_For algo) * (# Stakeholders for algo)
-4. To check the AlgoRank Score (DP) of any Algo/Dataset, simply use the address component of the DID as follows [tokenx.sol]:
-address RP_contract = 
+4. To check the AlgoRank Score (DP) of any Algo/Dataset, simply use the address component of the DID as follows [Dolphin_Points.sol]:
+address Dolphin_Points_Contract = addr
 address algo_address = DID
-RP_contract.balanceOf(algo_address)
-5. Stakers can call unstake() on Erc900BasicStake.sol to get their $ocean back. This will correspondingly reduct the RP of the algo.
+Dolphin_Points_Contract.balanceOf(algo_address)
+5. Stakers can call unstake() on Erc900BasicStake.sol to get their $ocean back. This will correspondingly reduce the DP of the algo.
 
 
 
