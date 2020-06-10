@@ -1,7 +1,7 @@
 # algorank: Dolphin Points
 CLR based algorank for $ocean
 
-Please Switch to "newx" branch for working code.
+Please Switch to "new1" branch for working code.
 
 This is a deployment of smart contracts for staking $ocean tokens as votes in favour of different algorithims/datasets on https://commons.oceanprotocol.com . 
 
