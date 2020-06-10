@@ -1,15 +1,22 @@
 # algorank: Dolphin Points
 CLR based algorank for $ocean
+
 Please Switch to "newx" branch for working code.
 
-This is a deployment of smart contracts for staking $ocean tokens as votes in favour of different alorithims/datasets on https://commons.oceanprotocol.com  We've developed a process to calculate inalienable reputation points (dolphin Points, or DP) for every algorithim and dataset, tied to their DID/Address. DP, unlike tokens, cannot be transferred; they can only be minted and burnt. Specifically, DP is minted everytime somebody stakes $ocean on an algorithim. DP is based on CLR, and thus both the magnitude and distribution of stakes are used to compute the final RP score.
+This is a deployment of smart contracts for staking $ocean tokens as votes in favour of different algorithims/datasets on https://commons.oceanprotocol.com . 
+
+We've developed a process to calculate inalienable reputation points (dolphin Points, or DP) for every algorithim and dataset, tied to their DID/Address. DP, unlike tokens, cannot be transferred; they can only be minted and burnt. Specifically, DP is minted everytime somebody stakes $ocean on an algorithim. DP is based on CLR, and thus both the magnitude and distribution of stakes are used to compute the final DP score.
 
 For easy testing remix is recommended. 
 
 A number of important functions have been implemented and are functional here:
+
 -ERC900 token class for staking in favour of algorithims
+
 -ERC1391 token class for inalienable reputation tokens
+
 -Custom weights to compute RP based on $ocean stakes
+
 
 The steps for staking in favour of any algorithim is as follows:
 
