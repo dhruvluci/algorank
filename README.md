@@ -12,14 +12,15 @@ A number of important functions have been implemented and are functional here:
 
 The steps for staking in favour of any algorithim is as follows:
 
-1. Call stakeFor(_addr_) where addr is the DID address of the algorithim
-2. The reputation points (RP) of an algorithim are calculated as follows:
+1. Users *Stake* $ocean : by calling Call stakeFor(_addr_) in the Erc900BasicStake where addr is the DID address of the algorithim
+2. The reputation points (RP) of an algorithim are updated as follows:
 root(Total Staked For algo) * (# Stakeholders for algo)
-3. Stakers can call unstake() to get their $ocean back. This will correspondingly reduct the RP of the algo.
-
-To check the AlgoRank Score of any Algo/Dataset, simply use the address component of the DID as follows:
+3. To check the AlgoRank Score (RP) of any Algo/Dataset, simply use the address component of the DID as follows:
 address RP_contract = 
 address algo_address = DID
 RP_contract.balanceOf(algo_address)
+4. Stakers can call unstake() to get their $ocean back. This will correspondingly reduct the RP of the algo.
+
+
 
 
