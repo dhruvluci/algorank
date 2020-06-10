@@ -3,7 +3,7 @@ CLR based algorank for $ocean.
 
 Use branch "new1" for working code.
 
-This is a deployment of smart contracts for staking $ocean tokens as votes in favour of different alorithims/datasets on https://commons.oceanprotocol.com  We've developed a process to calculate inalienable reputation points (dolphin Points, or DP) for every algorithim and dataset, tied to their DID/Address. DP, unlike tokens, cannot be transferred; they can only be minted and burnt. Specifically, DP is minted everytime somebody stakes $ocean on an algorithim. RP is co-related with CLR, and thus both the magnitude and distribution of stakes are used to compute the final RP score.
+This is a deployment of smart contracts for staking $ocean tokens as votes in favour of different alorithims/datasets on https://commons.oceanprotocol.com  We've developed a process to calculate inalienable reputation points (dolphin Points, or DP) for every algorithim and dataset, tied to their DID/Address. DP, unlike tokens, cannot be transferred; they can only be minted and burnt. Specifically, DP is minted everytime somebody stakes $ocean on an algorithim. DP is co-related with CLR, and thus both the magnitude and distribution of stakes are used to compute the final DP score.
 
 For easy testing remix is recommended. 
 
@@ -19,9 +19,9 @@ The steps for staking in favour of any algorithim is as follows:
 3. The Dolphin Points (DP)/AlgoRank Score of an algorithim are updated as follows [tokenx.sol] :
 root(Total_Staked_For algo) * (# Stakeholders for algo)
 4. To check the AlgoRank Score (DP) of any Algo/Dataset, simply use the address component of the DID as follows [tokenx.sol]:
-address RP_contract = 
+address DP_contract = 
 address algo_address = DID
-RP_contract.balanceOf(algo_address)
+DP_contract.balanceOf(algo_address)
 5. Stakers can call unstake() on Erc900BasicStake.sol to get their $ocean back. This will correspondingly reduct the RP of the algo.
 
 
