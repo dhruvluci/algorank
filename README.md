@@ -17,4 +17,9 @@ The steps for staking in favour of any algorithim is as follows:
 root(Total Staked For algo) * (# Stakeholders for algo)
 3. Stakers can call unstake() to get their $ocean back. This will correspondingly reduct the RP of the algo.
 
+To check the AlgoRank Score of any Algo/Dataset, simply use the address component of the DID as follows:
+address RP_contract = 
+address algo_address = DID
+RP_contract.balanceOf(algo_address)
+
 
